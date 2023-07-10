@@ -79,7 +79,7 @@ public function edit($id){
             'address'=>$request->address,
             'class'=>$request->class,
          ]);
-         return redirect()->to('//dashboard');   
+         return redirect()->to('/dashboard');   
         }
         public function delete(Request $request, $id){
              $student=Student::find($id);
